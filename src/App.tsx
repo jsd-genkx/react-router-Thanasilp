@@ -1,23 +1,20 @@
-import { useState } from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Nav from "./components/Nav";
-import { Nav2 } from "./components/Nav2";
+import { Nav } from "./components/Navbar";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
-import { Campus } from "./pages/Campus";
 import { InformationRightDetail } from "./components/InformationRightDetail";
+import { CourseDetails } from "./components/CourseDetail";
 
 function App() {
   return (
     <BrowserRouter>
-      {/* <Nav /> */}
-      <Nav2 />
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="onCampus" element={<Campus />} /> */}
         <Route path="/information/:slug" element={<InformationRightDetail />} />
+        <Route path="/course/:slug" element={<CourseDetails />} />
       </Routes>
     </BrowserRouter>
   );

@@ -13,7 +13,7 @@ export const InformationRightDetail = () => {
       <img
         src={info.desktopImg}
         alt={info.title}
-        className="w-full mb-4 drop-shadow-lg"
+        className="w-full mb-4 drop-shadow-lg hover:scale-[1.02] ease-in-out duration-300"
       />
       <h3 className="font-bold text-2xl mb-2">{info.title}</h3>
       <p className="text-gray-600 mb-4">{info.description}</p>

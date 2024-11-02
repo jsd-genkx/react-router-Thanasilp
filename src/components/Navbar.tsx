@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Nav2 = () => {
+export const Nav = () => {
   return (
     <header className="flex justify-around md:justify-between items-center px-6 min-h-16 bg-white drop-shadow-lg ">
       <a href="/" className="flex">

@@ -7,7 +7,7 @@ export const InformationLeft = () => {
         <img
           src="/src/assets/information-main.jpg"
           alt=""
-          className="mb-8 drop-shadow-lg"
+          className="mb-8 drop-shadow-lg hover:scale-[1.02] ease-in-out duration-300"
         />
         <h2 className="text-3xl font-bold text-gray-700">
           It doesn't hurt to keep practicing
