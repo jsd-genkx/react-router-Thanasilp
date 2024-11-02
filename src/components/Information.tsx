@@ -1,5 +1,4 @@
-import React, { Fragment } from "react";
-import { InformationLeft } from "./informationLeft";
+import { InformationLeft } from "./InformationLeft";
 import { InformationRight } from "./InformationRight";
 const Information = () => {
   return (

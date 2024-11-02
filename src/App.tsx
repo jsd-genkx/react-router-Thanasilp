@@ -5,8 +5,8 @@ import Nav from "./components/Nav";
 import { Nav2 } from "./components/Nav2";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
-import { Footer } from "./components/Footer";
 import { Campus } from "./pages/Campus";
+import { InformationRightDetail } from "./components/InformationRightDetail";
 
 function App() {
   return (
@@ -15,10 +15,10 @@ function App() {
       <Nav2 />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="onCampus" element={<Campus />} />
+        <Route path="/about" element={<About />} />
+        {/* <Route path="onCampus" element={<Campus />} /> */}
+        <Route path="/information/:slug" element={<InformationRightDetail />} />
       </Routes>
-      <Footer></Footer>
     </BrowserRouter>
   );
 }
