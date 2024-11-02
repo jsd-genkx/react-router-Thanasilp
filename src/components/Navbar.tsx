@@ -26,7 +26,7 @@ export const Nav = () => {
           className="min-h-[32px]"
         />
       </a>
-      <a className="flex md:hidden">
+      <a className="flex md:hidden" href="/login">
         <img
           src="/src/assets/ic-login.svg"
           alt="login"
@@ -36,18 +36,10 @@ export const Nav = () => {
 
       {/* <!-- Desktop Nav --> */}
       <nav className="hidden md:flex gap-x-4 ">
-        <a className="" href="onCampus">
-          On Campus
-        </a>
-        <a className="" href="#">
-          Online
-        </a>
-        <a className="" href="#">
-          Tour companies
-        </a>
-        <a className="" href="#">
-          Sign in
-        </a>
+        <a href="onCampus">On Campus</a>
+        <a href="#">Online</a>
+        <a href="#">Tour companies</a>
+        <a href="/login">Log in</a>
       </nav>
     </header>
   );

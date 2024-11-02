@@ -19,7 +19,7 @@ export const Course = () => {
                 <img
                   src={course.img}
                   alt={course.title}
-                  className="hidden md:flex w-full relative scale-100 transition-all duration-300 hover:scale-90 object-fill"
+                  className="hidden md:flex w-full relative scale-100 transition-all duration-300 hover:scale-[0.94] object-fill"
                 />
                 <div className="md:px-4 md:pt-4 md:pb-2">
                   <h3 className="md:pb-4">{course.title}</h3>

@@ -5,7 +5,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { InformationRightDetail } from "./components/InformationRightDetail";
 import { CourseDetails } from "./components/CourseDetail";
-
+import { LogIn } from "./pages/LogIn";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/information/:slug" element={<InformationRightDetail />} />
         <Route path="/course/:slug" element={<CourseDetails />} />
+        <Route path="/login" element={<LogIn />} />
       </Routes>
     </BrowserRouter>
   );
